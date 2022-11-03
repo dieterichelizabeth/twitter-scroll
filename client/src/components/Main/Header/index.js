@@ -77,7 +77,7 @@ function Header() {
     <Card>
       <Card.Body>
         <Card.Title className="row d-flex justify-content-between px-3">
-          <h2>Home</h2>
+          <p>Home</p>
           <span className="text-primary">{svg__stars}</span>
         </Card.Title>
 
@@ -104,7 +104,11 @@ function Header() {
               <div className="text-primary">
                 {svg__picture} {svg__gif} {svg__chart} {svg__smile}
               </div>
-              <Button variant="primary" className="button__50" type="submit">
+              <Button
+                variant="primary"
+                className="button__50 mr-3"
+                type="submit"
+              >
                 Tweet
               </Button>
             </div>
