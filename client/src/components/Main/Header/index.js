@@ -74,14 +74,14 @@ function Header() {
   );
 
   return (
-    <Card>
+    <Card as="header" className="border--bottom">
       <Card.Body>
-        <Card.Title className="row d-flex justify-content-between px-3">
-          <p>Home</p>
-          <span className="text-primary">{svg__stars}</span>
+        <Card.Title className="row d-flex justify-content-between px-3 ">
+          <b>Home</b>
+          <span>{svg__stars}</span>
         </Card.Title>
 
-        <hr></hr>
+        <hr className="py-0 mt-0"></hr>
 
         <div className="d-flex flex-row">
           <Card.Img
@@ -97,18 +97,14 @@ function Header() {
               type="text"
               id="tweet"
               placeholder="What's Happening?"
-              className="border-0 mt-3 mb-4"
+              className="border-0 mt-1 mb-1"
             />
 
             <div className="row d-flex justify-content-between ml-3">
               <div className="text-primary">
                 {svg__picture} {svg__gif} {svg__chart} {svg__smile}
               </div>
-              <Button
-                variant="primary"
-                className="button__50 mr-3"
-                type="submit"
-              >
+              <Button className="border__50 mr-3 btn--blue" type="submit">
                 Tweet
               </Button>
             </div>

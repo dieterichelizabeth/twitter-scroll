@@ -20,7 +20,7 @@ function Trends() {
     <Card className="trending--card">
       <Card.Body>
         <Card.Title className="row d-flex justify-content-between px-3 font-weight-bold">
-          <p>Trends for you</p>
+          <b>Trends for you</b>
           <span className="text-primary">{svg__settings}</span>
         </Card.Title>
 
@@ -29,7 +29,9 @@ function Trends() {
         {/* Trending Cards */}
         <TrendCards />
 
-        <Card.Link className="text-primary">Show More</Card.Link>
+        <a href="/" className="color--blue">
+          Show More
+        </a>
       </Card.Body>
     </Card>
   );

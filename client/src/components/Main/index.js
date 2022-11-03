@@ -5,7 +5,7 @@ function Main() {
   return (
     <main>
       <Header />
-      <div className="block--divider"></div>
+
       <Feed />
     </main>
   );

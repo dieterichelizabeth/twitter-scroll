@@ -99,17 +99,17 @@ function Tweet() {
             <Card.Text>
               Giving Standup comedy a go. Open mic starts at 7, hit me up if you
               want a ticket{" "}
-              <span className="text-primary">#heregoesnothing</span>
+              <span className="color--blue">#heregoesnothing</span>
             </Card.Text>
             <img
               src="https://images.unsplash.com/photo-1610308479130-5141d71ba6e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"
               alt="comedy"
-              className="w-100 mb-3"
+              className="w-100 mb-2"
             ></img>
           </div>
 
           {/* Tweet Actions */}
-          <footer className="row d-flex justify-content-between text-primary  pl-3 w-75">
+          <footer className="row d-flex justify-content-between text-primary pt-1 pl-3 w-75">
             <div>{svg__comment} 1</div>
             <div>{svg__reTweet} </div>
             <div>{svg__heart} 8</div>

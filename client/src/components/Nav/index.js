@@ -5,8 +5,8 @@ function Navbar() {
   const svg__logo = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
+      width="30"
+      height="30"
       fill="currentColor"
       class="bi bi-twitter"
       viewBox="0 0 16 16"
@@ -36,7 +36,6 @@ function Navbar() {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      fill="currentColor"
       className="bi bi-hash"
       viewBox="0 0 16 16"
     >
@@ -50,7 +49,6 @@ function Navbar() {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      fill="currentColor"
       className="bi bi-bell"
       viewBox="0 0 16 16"
     >
@@ -64,7 +62,6 @@ function Navbar() {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      fill="currentColor"
       className="bi bi-envelope"
       viewBox="0 0 16 16"
     >
@@ -78,7 +75,6 @@ function Navbar() {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      fill="currentColor"
       className="bi bi-bookmark"
       viewBox="0 0 16 16"
     >
@@ -92,7 +88,6 @@ function Navbar() {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      fill="currentColor"
       className="bi bi-card-list"
       viewBox="0 0 16 16"
     >
@@ -107,7 +102,6 @@ function Navbar() {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      fill="currentColor"
       className="bi bi-person-circle"
       viewBox="0 0 16 16"
     >
@@ -125,7 +119,6 @@ function Navbar() {
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
-      fill="currentColor"
       className="bi bi-three-dots"
       viewBox="0 0 16 16"
     >
@@ -198,9 +191,7 @@ function Navbar() {
           <span className="pt-1 pr-2">{svg__more}</span> More
         </Nav.Link>
       </div>
-      <Button variant="primary" className="m-3 button__50">
-        Tweet
-      </Button>
+      <Button className="m-3 border__50 btn--blue">Tweet</Button>
     </Nav>
   );
 }

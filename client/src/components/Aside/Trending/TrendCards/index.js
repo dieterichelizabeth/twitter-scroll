@@ -4,11 +4,9 @@ function TrendCards() {
   const website = (
     <Card className="website--card">
       <Card.Body className="row d-flex p-0">
-        <div className="w-75 p-4">
-          <Card.Title className="text-muted mb-0">Space</Card.Title>
-          <Card.Text>
-            Lunar photography improves the discovery of the moon #themoon
-          </Card.Text>
+        <div className="w-75 px-4 pt-2 font--sm">
+          <b className="text-muted mb-0 font--sm">Space</b>
+          <p>Lunar photography improves the discovery of the moon</p>
         </div>
 
         <Card.Img
@@ -32,7 +30,7 @@ function TrendCards() {
         {website}
 
         <footer>
-          <Card.Text className="text-muted">
+          <Card.Text className="text-muted pt-1">
             10,094 people are Tweeting about this
           </Card.Text>
         </footer>

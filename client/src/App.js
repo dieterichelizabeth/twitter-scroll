@@ -6,7 +6,7 @@ import Aside from "./components/Aside";
 function App() {
   return (
     <div className="grid grid--1x3">
-      <header className="App-header">
+      <header>
         <Navbar />
       </header>
       <Main />
