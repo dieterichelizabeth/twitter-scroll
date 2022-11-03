@@ -6,6 +6,7 @@ img {
   border-radius: 5px;
 }
 
+/* TODO: rename to border 50 */
 .button__50 {
   border-radius: 20px;
 }
@@ -20,6 +21,7 @@ img {
   border-radius: 50%;
 }
 
+/* TODO: rename */
 .tweet--form {
   width: 90%;
 }
@@ -29,4 +31,46 @@ img {
   width: 100%;
   background-color: rgba(128, 128, 128, 0.126);
   border-radius: 5px;
+}
+
+/* Search Bar */
+.border--left__50 {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: none;
+}
+
+.border--right__50 {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+}
+
+/* Trending */
+.trending--card {
+  background-color: #e9ebf2aa;
+  border: none;
+  border-radius: 10px;
+}
+
+.website--card {
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+.website--card:hover {
+  cursor: pointer;
+}
+
+.website--card__img {
+  width: 25%;
+  max-height: 100px;
+  object-fit: cover;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: translateX(-15px);
 }
