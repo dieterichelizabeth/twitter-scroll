@@ -1,5 +1,14 @@
+import Tweet from "../../Tweet";
+
 function Feed() {
-  return <p>Feed</p>;
+  return (
+    <>
+      <div>
+        <Tweet />
+        <Tweet />
+      </div>
+    </>
+  );
 }
 
 export default Feed;

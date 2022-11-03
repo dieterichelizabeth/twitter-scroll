@@ -1,3 +1,11 @@
+svg:hover {
+  cursor: pointer;
+}
+
+img {
+  border-radius: 5px;
+}
+
 .button__50 {
   border-radius: 20px;
 }
@@ -14,4 +22,11 @@
 
 .tweet--form {
   width: 90%;
+}
+
+.block--divider {
+  height: 15px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.126);
+  border-radius: 5px;
 }

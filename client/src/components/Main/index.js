@@ -3,10 +3,11 @@ import Feed from "./Feed";
 
 function Main() {
   return (
-    <>
+    <main>
       <Header />
-      {/* <Feed /> */}
-    </>
+      <div className="block--divider"></div>
+      <Feed />
+    </main>
   );
 }
 
