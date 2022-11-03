@@ -27,10 +27,9 @@ img {
 }
 
 .block--divider {
-  height: 15px;
+  height: 5px;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.126);
-  border-radius: 5px;
 }
 
 /* Search Bar */
@@ -73,4 +72,15 @@ img {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   transform: translateX(-15px);
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 940px) {
+  .grid--1x3 {
+    grid-template-columns: 0.5fr 1.6fr 0.8fr;
+  }
 }

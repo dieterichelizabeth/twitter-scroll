@@ -1,15 +1,15 @@
 import "./App.css";
-// import Navbar from "./components/Nav";
-// import Main from "./components/Main";
+import Navbar from "./components/Nav";
+import Main from "./components/Main";
 import Aside from "./components/Aside";
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
+    <div className="grid grid--1x3">
+      <header className="App-header">
         <Navbar />
-      </header> */}
-      {/* <Main /> */}
+      </header>
+      <Main />
       <Aside />
     </div>
   );
