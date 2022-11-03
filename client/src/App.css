@@ -1,4 +1,17 @@
 .button__50 {
   border-radius: 20px;
-  width: 30%;
+}
+
+.card--img {
+  height: 70px;
+  width: 70px;
+}
+
+.image__profile {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.tweet--form {
+  width: 90%;
 }
