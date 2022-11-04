@@ -6,7 +6,7 @@ export const trends = [
     siteDesc: "Lunar photography improves the discovery of the moon",
     photo:
       "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bW9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-    people: "10094",
+    people: "10,094",
   },
   {
     type: "WorldNews",
