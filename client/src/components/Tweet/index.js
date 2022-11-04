@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import {
-  svg_carrot,
+  svg__more,
   svg__comment,
   svg__reTweet,
   svg__heart,
@@ -8,13 +8,39 @@ import {
 } from "../../assets/svg";
 import { tweets } from "../../data/tweets";
 
-// TODO: If photo, display photo. Algorythm for displaying a time. If 0, don't display #. Regex for # color? Replace down arrow with ...
+// TODO: Displaying time.
 
 function Tweet() {
+  function matchHashtag(tweet) {
+    let match = tweet.match(/#[\w\d]+/g);
+
+    if (match === null) {
+      return <Card.Text>{tweet}</Card.Text>;
+    } else {
+      let arr = tweet.split(" "); // Turn to array
+      let index = arr.indexOf(match.toString()); // get the index of the hashtag
+      arr = arr.slice(0, index); // remove the hashtag
+      let str = arr.join(" "); // join the array
+
+      return (
+        <Card.Text>
+          {str}{" "}
+          {match.map((word) => (
+            <span className="color--blue">{word}</span>
+          ))}
+        </Card.Text>
+      );
+    }
+  }
+
+  function displayCount(count) {
+    return count === "0" ? null : count;
+  }
+
   return (
     <>
       {tweets.map((tweet) => (
-        <Card>
+        <Card key={tweet.name}>
           <Card.Body className="d-flex flex-row">
             {/* Profile Photo */}
             <Card.Img
@@ -33,35 +59,35 @@ function Tweet() {
                     @{tweet.username} &#8226; 3m
                   </Card.Subtitle>
                 </div>
-                <span>{svg_carrot}</span>
+                <span>{svg__more}</span>
               </header>
 
               {/* Tweet Content */}
               <div>
-                <Card.Text>
-                  {tweet.text}{" "}
-                  {/* <span className="color--blue">#heregoesnothing</span> */}
-                </Card.Text>
-                <img
-                  src={tweet.photo}
-                  alt="comedy"
-                  className="w-100 mb-2"
-                ></img>
+                {matchHashtag(tweet.text)}
+
+                {tweet.photo ? (
+                  <img
+                    src={tweet.photo}
+                    alt="comedy"
+                    className="w-100 mb-2"
+                  ></img>
+                ) : null}
               </div>
 
               {/* Tweet Actions */}
               <footer className="row d-flex justify-content-between text-primary pt-1 pl-3 w-75">
                 <div>
-                  {svg__comment} {tweet.comments}
+                  {svg__comment} {displayCount(tweet.comments)}
                 </div>
                 <div>
-                  {svg__reTweet} {tweet.reTweets}
+                  {svg__reTweet} {displayCount(tweet.reTweets)}
                 </div>
                 <div>
-                  {svg__heart} {tweet.likes}
+                  {svg__heart} {displayCount(tweet.likes)}
                 </div>
                 <div>
-                  {svg__upload} {tweet.uploads}
+                  {svg__upload} {displayCount(tweet.uploads)}
                 </div>
               </footer>
             </div>

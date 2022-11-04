@@ -5,7 +5,7 @@ function TrendCards() {
   return (
     <>
       {trends.map((trend) => (
-        <>
+        <div key={trend.people}>
           <article>
             <header className="mb-1">
               <Card.Text className="text-muted mb-0">
@@ -49,7 +49,7 @@ function TrendCards() {
           </article>
 
           <hr></hr>
-        </>
+        </div>
       ))}
     </>
   );
