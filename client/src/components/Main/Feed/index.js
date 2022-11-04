@@ -5,7 +5,6 @@ function Feed() {
     <>
       <div>
         <Tweet />
-        <Tweet />
       </div>
     </>
   );
