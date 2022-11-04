@@ -2,6 +2,7 @@ export const tweets = [
   {
     name: "Brie",
     username: "Sktch_ComedyFan",
+    time: "3min",
     profile_photo:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
     photo:
@@ -15,6 +16,7 @@ export const tweets = [
   {
     name: "Sun",
     username: "tooast_fries",
+    time: "10min",
     profile_photo:
       "https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
     text: "Running into some difficulty with new toaster... Any advice welcome",

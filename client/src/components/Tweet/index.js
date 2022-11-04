@@ -8,8 +8,6 @@ import {
 } from "../../assets/svg";
 import { tweets } from "../../data/tweets";
 
-// TODO: Displaying time.
-
 function Tweet() {
   function matchHashtag(tweet) {
     let match = tweet.match(/#[\w\d]+/g);
@@ -17,14 +15,11 @@ function Tweet() {
     if (match === null) {
       return <Card.Text>{tweet}</Card.Text>;
     } else {
-      let arr = tweet.split(" "); // Turn to array
-      let index = arr.indexOf(match.toString()); // get the index of the hashtag
-      arr = arr.slice(0, index); // remove the hashtag
-      let str = arr.join(" "); // join the array
+      match.map((word) => (tweet = tweet.replace(word, "")));
 
       return (
         <Card.Text>
-          {str}{" "}
+          {tweet}{" "}
           {match.map((word) => (
             <span className="color--blue">{word}</span>
           ))}
@@ -56,7 +51,7 @@ function Tweet() {
                 <div className="d-flex flex-row">
                   <Card.Title className="mr-1 mb-0">{tweet.name}</Card.Title>
                   <Card.Subtitle className="pt-2  text-muted">
-                    @{tweet.username} &#8226; 3m
+                    @{tweet.username} &#8226; {tweet.time}
                   </Card.Subtitle>
                 </div>
                 <span>{svg__more}</span>
