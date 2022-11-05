@@ -6,9 +6,8 @@ import {
   svg__heart,
   svg__upload,
 } from "../../assets/svg";
-import { tweets } from "../../data/tweets";
 
-function Tweet() {
+function Tweet({ tweets }) {
   function matchHashtag(tweet) {
     let match = tweet.match(/#[\w\d]+/g);
 
@@ -21,7 +20,9 @@ function Tweet() {
         <Card.Text>
           {tweet}{" "}
           {match.map((word) => (
-            <span className="color--blue">{word}</span>
+            <span className="color--blue" key={word}>
+              {word}
+            </span>
           ))}
         </Card.Text>
       );

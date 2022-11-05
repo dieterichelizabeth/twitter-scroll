@@ -16,3 +16,5 @@ function App() {
 }
 
 export default App;
+
+// TODO: Add content (tweets and trending topics), Add infinite scroll to tweets, add pagination? to trending.
