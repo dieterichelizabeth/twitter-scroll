@@ -14,6 +14,7 @@ function Feed() {
   const [selectedTweets, setSelectedTweets] = useState();
   const [showLoader, setshowLoader] = useState();
 
+  // ---------- Handle loading/tweet display ------------ //
   useEffect(() => {
     if (atBottom === true) {
       setshowLoader(true);
@@ -51,34 +52,28 @@ function Feed() {
     }, 3000);
   };
 
-  // Intersection observer - Listens for bottom of Feed
-  let listening;
-  const handleIntersect = () => {
-    setAtBottom(true);
-  };
-
-  window.addEventListener(
-    "load",
-    () => {
-      listening = document.querySelector("#amhere");
-
-      createObserver();
-    },
-    false
-  );
+  // ---------- Listen for bottom of feed ------------ //
+  window.addEventListener("load", () => {
+    createObserver();
+  });
 
   function createObserver() {
-    let observer;
-
+    let target = document.querySelector("#amhere");
+    // root: browser viewport, rootMartin: 0, threshold: 100% target visible
     let options = {
       root: null,
       rootMargin: "0px",
       threshold: 1,
     };
+    // create observer by calling constructor, passes handleIntersection function to be run when threshold is crossed
+    let observer = new IntersectionObserver(handleIntersect, options);
 
-    observer = new IntersectionObserver(handleIntersect, options);
-    observer.observe(listening);
+    observer.observe(target);
   }
+
+  const handleIntersect = () => {
+    setAtBottom(true);
+  };
 
   return (
     <>
