@@ -8,6 +8,7 @@ import {
 } from "../../assets/svg";
 
 function Tweet({ tweets }) {
+  // If the tweet has a hashtag, add attional styling
   function matchHashtag(tweet) {
     let match = tweet.match(/#[\w\d]+/g);
 
@@ -21,7 +22,7 @@ function Tweet({ tweets }) {
           {tweet}{" "}
           {match.map((word) => (
             <span className="color--blue" key={word}>
-              {word}
+              {word}{" "}
             </span>
           ))}
         </Card.Text>
@@ -29,6 +30,7 @@ function Tweet({ tweets }) {
     }
   }
 
+  // If the count is 0, don't display zero
   function displayCount(count) {
     return count === "0" ? null : count;
   }

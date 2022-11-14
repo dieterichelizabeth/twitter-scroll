@@ -48,6 +48,12 @@ svg:hover {
   color: var(--color-primary);
 }
 
+.hidden--target {
+  color: white;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 .font--sm {
   font-size: 0.7rem;
 }
