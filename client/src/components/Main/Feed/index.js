@@ -1,61 +1,32 @@
 import React, { useState, useEffect } from "react";
+import Loading from "./Loader";
 import Tweet from "./Tweet";
 import { tweets } from "../../../data/tweets";
-import Loading from "./Loader";
 
 function Feed() {
-  // control variables
-  const available = tweets.length;
+  const availableTweets = tweets.length;
   const limit = 4;
+  const startIndex = 0;
 
-  // Loader Display State
-  const [showLoader, setshowLoader] = useState();
-  const [startIndex, setstartIndex] = useState(0);
-  const [endIndex, setendIndex] = useState(startIndex + limit);
-  const [selectedTweets, setSelectedTweets] = useState();
-  const [displayCount, setdisplayCount] = useState(0);
   const [atBottom, setAtBottom] = useState();
+  const [endIndex, setendIndex] = useState(startIndex + limit);
+  const [displayedTweets, setdisplayedTweets] = useState(0);
+  const [selectedTweets, setSelectedTweets] = useState();
+  const [showLoader, setshowLoader] = useState();
 
   useEffect(() => {
-    // show the loading animation
     if (atBottom === true) {
       setshowLoader(true);
       loadTweets();
-      timer();
-    } else {
-      console.log("at bottom = ", false);
+      revert_atBottom();
     }
   }, [atBottom]);
 
-  const timer = () => {
-    setTimeout(async () => {
-      setAtBottom(false);
-    }, 3000);
-  };
-
-  // Update Selected Tweets
-  const showTweets = () => {
-    // Grab the specific part of the array we want to display
-    let selectedTweets = tweets.slice(startIndex, endIndex);
-
-    // Update the indexes
-    setstartIndex(startIndex + limit);
-    setendIndex(endIndex + limit);
-
-    console.log("start index :", startIndex, "end index: ", endIndex);
-
-    // Display selected Tweets
-    setSelectedTweets(selectedTweets);
-  };
-
   const loadTweets = () => {
-    console.log("available: ", available, "display count: ", displayCount);
-    // 2 seconds later
     setTimeout(async () => {
       try {
-        // If there are still quotes to display - load the next batch and update the displayed
-        if (available > displayCount) {
-          setdisplayCount(displayCount + limit);
+        if (availableTweets > displayedTweets) {
+          setdisplayedTweets(displayedTweets + limit);
           showTweets();
         }
       } catch (error) {
@@ -66,8 +37,25 @@ function Feed() {
     }, 2000);
   };
 
+  // Update Selected Tweets
+  const showTweets = () => {
+    // Grab the specific part of the array we want to display
+    let selectedTweets = tweets.slice(startIndex, endIndex);
+    setendIndex(endIndex + limit);
+    setSelectedTweets(selectedTweets);
+  };
+
+  const revert_atBottom = () => {
+    setTimeout(async () => {
+      setAtBottom(false);
+    }, 3000);
+  };
+
   // Intersection observer - Listens for bottom of Feed
   let listening;
+  const handleIntersect = () => {
+    setAtBottom(true);
+  };
 
   window.addEventListener(
     "load",
@@ -91,10 +79,6 @@ function Feed() {
     observer = new IntersectionObserver(handleIntersect, options);
     observer.observe(listening);
   }
-
-  const handleIntersect = () => {
-    setAtBottom(true);
-  };
 
   return (
     <>

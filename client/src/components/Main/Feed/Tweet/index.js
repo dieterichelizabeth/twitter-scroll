@@ -8,7 +8,7 @@ import {
 } from "../../../../assets/svg";
 
 function Tweet({ tweets }) {
-  // If the tweet has a hashtag, add attional styling
+  // Check for hashtags(styling)
   function matchHashtag(tweet) {
     let match = tweet.match(/#[\w\d]+/g);
 
@@ -30,8 +30,8 @@ function Tweet({ tweets }) {
     }
   }
 
-  // If the count is 0, don't display zero
-  function displayCount(count) {
+  // Check Interactions count(if 0, don't display count)
+  function formatCount(count) {
     return count === "0" ? null : count;
   }
 
@@ -76,16 +76,16 @@ function Tweet({ tweets }) {
               {/* Tweet Actions */}
               <footer className="row d-flex justify-content-between text-primary pt-1 pl-3 w-75">
                 <div>
-                  {svg__comment} {displayCount(tweet.comments)}
+                  {svg__comment} {formatCount(tweet.comments)}
                 </div>
                 <div>
-                  {svg__reTweet} {displayCount(tweet.reTweets)}
+                  {svg__reTweet} {formatCount(tweet.reTweets)}
                 </div>
                 <div>
-                  {svg__heart} {displayCount(tweet.likes)}
+                  {svg__heart} {formatCount(tweet.likes)}
                 </div>
                 <div>
-                  {svg__upload} {displayCount(tweet.uploads)}
+                  {svg__upload} {formatCount(tweet.uploads)}
                 </div>
               </footer>
             </div>
