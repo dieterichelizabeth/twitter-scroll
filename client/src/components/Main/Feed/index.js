@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Tweet from "../../Tweet";
+import Tweet from "./Tweet";
 import { tweets } from "../../../data/tweets";
 import Loading from "./Loader";
 
@@ -18,10 +18,20 @@ function Feed() {
 
   useEffect(() => {
     // show the loading animation
-    setshowLoader(true);
-    loadTweets();
-    setAtBottom(false);
+    if (atBottom === true) {
+      setshowLoader(true);
+      loadTweets();
+      timer();
+    } else {
+      console.log("at bottom = ", false);
+    }
   }, [atBottom]);
+
+  const timer = () => {
+    setTimeout(async () => {
+      setAtBottom(false);
+    }, 3000);
+  };
 
   // Update Selected Tweets
   const showTweets = () => {
@@ -32,14 +42,14 @@ function Feed() {
     setstartIndex(startIndex + limit);
     setendIndex(endIndex + limit);
 
-    console.log(startIndex, endIndex);
+    console.log("start index :", startIndex, "end index: ", endIndex);
 
     // Display selected Tweets
     setSelectedTweets(selectedTweets);
   };
 
   const loadTweets = () => {
-    console.log(available, displayCount);
+    console.log("available: ", available, "display count: ", displayCount);
     // 2 seconds later
     setTimeout(async () => {
       try {
@@ -100,6 +110,3 @@ function Feed() {
 }
 
 export default Feed;
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-// https://dev.to/producthackers/intersection-observer-using-react-49ko

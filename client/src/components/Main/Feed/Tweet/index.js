@@ -5,7 +5,7 @@ import {
   svg__reTweet,
   svg__heart,
   svg__upload,
-} from "../../assets/svg";
+} from "../../../../assets/svg";
 
 function Tweet({ tweets }) {
   // If the tweet has a hashtag, add attional styling
