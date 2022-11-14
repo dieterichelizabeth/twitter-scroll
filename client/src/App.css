@@ -136,8 +136,18 @@ svg:hover {
   display: none;
 }
 
+.article__text {
+  font-size: 0.5rem;
+}
+
 @media screen and (min-width: 940px) {
   .aside--display {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .article__text {
+    font-size: 0.6rem;
   }
 }

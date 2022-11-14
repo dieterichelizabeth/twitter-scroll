@@ -20,10 +20,8 @@ function TrendCards() {
               <>
                 <Card className="website--card">
                   <Card.Body className="row d-flex p-0">
-                    <div className="w-75 px-4 pt-2 font--sm">
-                      <b className="text-muted mb-0 font--sm">
-                        {trend.siteTitle}
-                      </b>
+                    <div className="w-75 px-4 pt-2 article__text">
+                      <b className="text-muted mb-0">{trend.siteTitle}</b>
                       <p>{trend.siteDesc}</p>
                     </div>
 
