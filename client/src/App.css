@@ -130,3 +130,14 @@ svg:hover {
   transform: translate(-15px, -1px);
   width: 25%;
 }
+
+/* Display Aside */
+.aside--display {
+  display: none;
+}
+
+@media screen and (min-width: 940px) {
+  .aside--display {
+    display: block;
+  }
+}

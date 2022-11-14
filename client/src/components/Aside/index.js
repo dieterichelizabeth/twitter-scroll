@@ -3,13 +3,11 @@ import Trends from "./Trending";
 
 function Aside() {
   return (
-    <>
-      <aside className="px-4 pt-2">
-        <Search />
+    <aside className="px-4 pt-2 aside--display">
+      <Search />
 
-        <Trends />
-      </aside>
-    </>
+      <Trends />
+    </aside>
   );
 }
 
