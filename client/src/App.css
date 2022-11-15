@@ -17,6 +17,10 @@ img {
   border-radius: 5px;
 }
 
+nav a {
+  font-size: 1.2rem;
+}
+
 main {
   padding-bottom: 50px;
 }
@@ -36,7 +40,7 @@ svg:hover {
 }
 
 .border__50 {
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .border--bottom {
@@ -78,8 +82,8 @@ svg:hover {
 }
 
 .nav--img {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 .spinner {
@@ -99,7 +103,7 @@ svg:hover {
 
 @media screen and (min-width: 940px) {
   .grid--1x3 {
-    grid-template-columns: 0.5fr 1.6fr 0.8fr;
+    grid-template-columns: 0.6fr 1.5fr 0.8fr;
   }
 }
 

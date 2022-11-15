@@ -35,27 +35,27 @@ function Navbar() {
         <Nav.Link href="/" className="nav__logo">
           <span className="pt-1 pr-2">{svg__logo}</span>
         </Nav.Link>
-        <Nav.Link href="/" className="d-flex align-items-center">
+        <Nav.Link href="/" className="d-flex align-items-center  mt-2">
           <span className="pt-1 pr-2">{svg__home}</span> <b>Home</b>
         </Nav.Link>
         <Nav.Link
           eventKey="disabled"
           disabled
-          className="d-flex align-items-center"
+          className="d-flex align-items-center mt-2"
         >
           <span className="pt-1 pr-2">{svg__explore}</span> <b>Explore</b>
         </Nav.Link>
         <Nav.Link
           eventKey="disabled"
           disabled
-          className="d-flex align-items-center"
+          className="d-flex align-items-center mt-2"
         >
           <span className="pt-1 pr-2">{svg__notify}</span> <b>Notifications</b>
         </Nav.Link>
         <Nav.Link
           eventKey="disabled"
           disabled
-          className="d-flex align-items-center"
+          className="d-flex align-items-center mt-2"
         >
           <span className="pt-1 pr-2">{svg__message}</span> <b>Messages</b>
         </Nav.Link>
@@ -63,26 +63,26 @@ function Navbar() {
         <Nav.Link
           eventKey="disabled"
           disabled
-          className="d-flex align-items-center "
+          className="d-flex align-items-center mt-2"
         >
           <span className="pt-1 pr-2 ">{svg__bookmark}</span> <b>Bookmarks</b>
         </Nav.Link>
         <Nav.Link
           eventKey="disabled"
           disabled
-          className="d-flex align-items-center "
+          className="d-flex align-items-center mt-2"
         >
           <span className="pt-1 pr-2 ">{svg__list}</span> <b>Lists</b>
         </Nav.Link>
         <Nav.Link
           eventKey="disabled"
           disabled
-          className="d-flex align-items-center "
+          className="d-flex align-items-center mt-2"
         >
-          <span className="pt-1 ">
+          <span className="pt-1 pr-2">
             <img
               src={profile.photo}
-              className="nav--img image__profile mr-1"
+              className="nav--img image__profile"
               alt="a Smiling corgi"
             ></img>
           </span>{" "}
@@ -91,12 +91,12 @@ function Navbar() {
         <Nav.Link
           eventKey="disabled"
           disabled
-          className="d-flex align-items-center "
+          className="d-flex align-items-center mt-2"
         >
           <span className="pt-1 pr-2 ">{svg__more}</span> <b>More</b>
         </Nav.Link>
       </div>
-      <Button className="m-3 border__50 btn--blue nav--display">
+      <Button className="m-3 border__50 btn--blue nav--display pt-2 pb-2">
         <b>Tweet</b>
       </Button>
 

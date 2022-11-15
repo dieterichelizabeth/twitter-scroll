@@ -31,8 +31,8 @@ export const svg__home = [
   <svg
     key={"home"}
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="30"
+    height="30"
     fill="currentColor"
     className="bi bi-house-heart-fill"
     viewBox="0 0 16 16"
@@ -46,8 +46,8 @@ export const svg__explore = [
   <svg
     key={"explore"}
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="30"
+    height="30"
     className="bi bi-hash"
     viewBox="0 0 16 16"
   >
@@ -59,8 +59,8 @@ export const svg__notify = (
   <svg
     key={"notify"}
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="30"
+    height="30"
     className="bi bi-bell"
     viewBox="0 0 16 16"
   >
@@ -72,8 +72,8 @@ export const svg__message = (
   <svg
     key={"message"}
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="30"
+    height="30"
     className="bi bi-envelope"
     viewBox="0 0 16 16"
   >
@@ -85,8 +85,8 @@ export const svg__bookmark = (
   <svg
     key={"bookmark"}
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="30"
+    height="30"
     className="bi bi-bookmark"
     viewBox="0 0 16 16"
   >
@@ -98,8 +98,8 @@ export const svg__list = (
   <svg
     key={"list"}
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="30"
+    height="30"
     className="bi bi-card-list"
     viewBox="0 0 16 16"
   >
@@ -112,8 +112,8 @@ export const svg__more = (
   <svg
     key={"more"}
     xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
+    width="30"
+    height="30"
     className="bi bi-three-dots"
     viewBox="0 0 16 16"
   >
