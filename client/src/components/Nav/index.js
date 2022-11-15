@@ -11,7 +11,7 @@ import {
   svg__notify,
   svg__stars,
   svg__menu,
-  svg__search,
+  svg__search__large,
 } from "../../assets/svg";
 import { profile } from "../../data/profile";
 
@@ -110,7 +110,7 @@ function Navbar() {
           disabled
           className="d-flex align-items-center"
         >
-          <span className="pt-1 pr-2">{svg__search}</span>
+          <span className="pt-1 pr-2">{svg__search__large}</span>
         </Nav.Link>
         <Nav.Link
           eventKey="disabled"
