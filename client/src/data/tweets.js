@@ -1,3 +1,4 @@
+// sample tweets from twitter and https://randomwordgenerator.com/sentence.php
 export const tweets = [
   {
     name: "Brie",
@@ -19,7 +20,7 @@ export const tweets = [
     time: "1min",
     profile_photo:
       "https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
-    text: "Running into some difficulty with new toaster... Any advice welcome",
+    text: "Sometimes the laugh is funnier than the joke itself.",
     comments: "25",
     reTweets: "0",
     likes: "2",
@@ -28,24 +29,24 @@ export const tweets = [
   {
     name: "Grogs",
     username: "groggyprofess",
-    time: "10min",
+    time: "1min",
     profile_photo:
       "https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    text: "It must be easy to commit crimes as a snake because you don't have to worry about leaving fingerprints.",
-    comments: "0",
-    reTweets: "0",
+    text: "Imagine if sharks could run on the beach.",
+    comments: "10",
+    reTweets: "2",
     likes: "0",
     uploads: "0",
   },
   {
     name: "Mere",
     username: "funmere",
-    time: "11min",
+    time: "2min",
     photo:
-      "https://images.unsplash.com/photo-1581852017103-68ac65514cf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZWxlcGhhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1472982728022-601a8d99e9af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGFyY2hlb2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     profile_photo:
       "https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    text: "The elephant didn't want to talk about the person in the room.",
+    text: "I'm studying to be an archaeologist. I guess you could say that my life is in ruins",
     comments: "16",
     reTweets: "7",
     likes: "15",
@@ -54,7 +55,7 @@ export const tweets = [
   {
     name: "Susan",
     username: "shortcake_vocal",
-    time: "10min",
+    time: "2min",
     profile_photo:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     text: "Jason didn’t understand why his parents wouldn’t let him sell his little sister at the garage sale.",
@@ -67,9 +68,11 @@ export const tweets = [
     name: "Rhino",
     username: "rhinodistance",
     time: "4min",
+    photo:
+      "https://images.unsplash.com/photo-1536477832394-ac86b93e3753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2lua2luZyUyMGJvYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     profile_photo:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    text: "If you spin around three times, you'll start to feel melancholy.",
+    text: `College students: "We're all in the same boat"! The boat:`,
     comments: "1",
     reTweets: "7",
     likes: "6",
@@ -81,21 +84,21 @@ export const tweets = [
     time: "4min",
     profile_photo:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    text: "We have a lot of rain in June. #why",
-    comments: "0",
-    reTweets: "0",
+    text: "5 ants rented an apartment with another 5 ants. Now they're tenants.",
+    comments: "7",
+    reTweets: "1",
     likes: "7",
     uploads: "0",
   },
   {
     name: "Bruce",
     username: "sprucePrevious21",
-    time: "7min",
+    time: "4min",
     photo:
-      "https://images.unsplash.com/photo-1625369708811-65ebfc5ca632?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z29sZGZpc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1611859328053-3cbc9f9399f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2FrJTIwdHJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     profile_photo:
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    text: "Improve your goldfish's physical fitness by getting him a bicycle. #protip #pets",
+    text: "Do you want a brief explanation of what an acorn is? In a nutshell, it's an oak tree. #nutshell #oaktree #getit",
     comments: "18",
     reTweets: "3",
     likes: "5",
@@ -104,7 +107,7 @@ export const tweets = [
   {
     name: "Rachel",
     username: "bowoafish",
-    time: "2min",
+    time: "5min",
     profile_photo:
       "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     text: "On a scale from one to ten, what's your favorite flavor of random grammar?",
@@ -116,7 +119,7 @@ export const tweets = [
   {
     name: "Bianca",
     username: "great_nerve",
-    time: "14min",
+    time: "5min",
     profile_photo:
       "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     text: "Iron pyrite is the most foolish of all minerals. #geography",
@@ -128,10 +131,10 @@ export const tweets = [
   {
     name: "Flo",
     username: "vaulterInvolve",
-    time: "8min",
+    time: "5min",
     profile_photo:
       "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    text: "sad to hear that fireflies are facing extinction due to artificial light, habitat loss, and pesticides",
+    text: `Apparently you can't use "Beef Stew" as a password. It's not stroganoff #dadJokeOfTheDay #jokes `,
     comments: "12",
     reTweets: "20",
     likes: "0",
@@ -140,7 +143,7 @@ export const tweets = [
   {
     name: "Brian",
     username: "bored_defense",
-    time: "8min",
+    time: "6min",
     profile_photo:
       "https://images.unsplash.com/photo-1609010697446-11f2155278f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     text: "People generally approve of dogs eating cat food but not cats eating dog food. #foodforthought",
@@ -164,7 +167,7 @@ export const tweets = [
   {
     name: "Nini",
     username: "thebarber",
-    time: "2min",
+    time: "7min",
     photo:
       "https://images.unsplash.com/photo-1604186838347-9faaf0b83be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFsbG93ZWVuJTIwY29zdHVtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     profile_photo:
@@ -178,7 +181,7 @@ export const tweets = [
   {
     name: "Disney",
     username: "doseof_disney_parks",
-    time: "13min",
+    time: "7min",
     photo:
       "https://images.unsplash.com/photo-1590144662036-33bf0ebd2c7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlzbmV5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     profile_photo:
@@ -192,7 +195,7 @@ export const tweets = [
   {
     name: "August",
     username: "whythatAugust",
-    time: "9min",
+    time: "7min",
     photo:
       "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdlZGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     profile_photo:
@@ -206,7 +209,7 @@ export const tweets = [
   {
     name: "Sam",
     username: "22_words",
-    time: "11min",
+    time: "8min",
     profile_photo:
       "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM0fHxwcm9maWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     text: "Now I know what they mean when they say driving in Italy is intense. This was SO stressful!",
@@ -218,7 +221,7 @@ export const tweets = [
   {
     name: "Danny",
     username: "dannysz7collins",
-    time: "9min",
+    time: "8min",
     photo:
       "https://images.unsplash.com/photo-1592924728350-f7d4fd5d1655?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHB1cHB5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     profile_photo:
@@ -232,7 +235,7 @@ export const tweets = [
   {
     name: "Marg",
     username: "margarita_blwrite",
-    time: "3min",
+    time: "8min",
     profile_photo:
       "https://images.unsplash.com/photo-1523307730650-594bc63f9d67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM4fHxwcm9maWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     text: "My pup has the strangest reaction to eating ice cream #chatterbox",
@@ -244,7 +247,7 @@ export const tweets = [
   {
     name: "Anna",
     username: "bleekabelle",
-    time: "13min",
+    time: "8min",
     profile_photo:
       "https://images.unsplash.com/photo-1522307837370-cc113a36b784?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQzfHxwcm9maWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     text: "My longest relationship isn't with my husband of 11 years (married 6), but with this box of Kirkland garbage bags I bought before we met in 2011. #garbagebags #lifeisgettingwild #marriedlife",
@@ -253,6 +256,204 @@ export const tweets = [
     likes: "28",
     uploads: "0",
   },
+  {
+    name: "Beans",
+    username: "goodbeanjokes",
+    time: "8min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1612504258838-fbf14fe4437d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJlYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    text: "More like Mercedes Beanz",
+    comments: "10",
+    reTweets: "5",
+    likes: "0",
+    uploads: "0",
+  },
+  {
+    name: "Simon",
+    username: "simon_holland",
+    time: "8min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1598207951491-255eaf139751?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: `My kid just learned "Uh oh spaghettios" but he keeps forgetting and is yelling "oh no noodles" instead`,
+    comments: "5",
+    reTweets: "2",
+    likes: "16",
+    uploads: "0",
+  },
+  {
+    name: "Hertz",
+    username: "heartzcore",
+    time: "8min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1586425225143-0c8f59053610?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: "Always nice to see my son's apple return home from it's daily school outing. #momlife #mysonhatesapples",
+    comments: "10",
+    reTweets: "22",
+    likes: "40",
+    uploads: "0",
+  },
+  {
+    name: "Phil",
+    username: "sphilzski",
+    time: "9min",
+    photo:
+      "https://images.unsplash.com/photo-1433162653888-a571db5ccccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    profile_photo:
+      "https://images.unsplash.com/photo-1579538506280-84e461ad0077?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: "Finny enjoying the fall weather. Hope everyone is staying warm! #puglife",
+    comments: "16",
+    reTweets: "7",
+    likes: "15",
+    uploads: "0",
+  },
+  {
+    name: "Karen",
+    username: "yoda_sam",
+    time: "10min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1617975251517-b90ff061b52e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: "My favorite October 30th tradition is my kids changing their mind about what they want to be for halloween #ahotdogtoataco",
+    comments: "13",
+    reTweets: "0",
+    likes: "0",
+    uploads: "1",
+  },
+  {
+    name: "Scotty",
+    username: "cleavland_ile",
+    time: "10min",
+    photo:
+      "https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    profile_photo:
+      "https://images.unsplash.com/photo-1602471615287-d733c59b79c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTd8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: `Do animals know we're wearing clothing or do I just traumatize my cat every time I peel off my socks?`,
+    comments: "1",
+    reTweets: "17",
+    likes: "6",
+    uploads: "0",
+  },
+  {
+    name: "Joansey",
+    username: "estoria_jone",
+    time: "10min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    text: "I relate to the moon because I look great in person and terrible in pictures.",
+    comments: "7",
+    reTweets: "1",
+    likes: "7",
+    uploads: "0",
+  },
+  {
+    name: "Samantha",
+    username: "hen_house",
+    time: "10min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1571755456748-8d03ec53cca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEwfHxwcm9maWxlJTIwcGhvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    text: "why does garlic have to wear so many little jackets?",
+    comments: "18",
+    reTweets: "3",
+    likes: "5",
+    uploads: "0",
+  },
+  {
+    name: "Lily",
+    username: "lyrocycle",
+    time: "10min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1597525822228-42d943b508ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE5fHxwcm9maWxlJTIwcGhvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    text: "If I saw a minion in real life I would put it in the microwave #minions",
+    comments: "12",
+    reTweets: "3",
+    likes: "2",
+    uploads: "0",
+  },
+  {
+    name: "Filo",
+    username: "frosty_snickers",
+    time: "5min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1633068587634-4280dabf12ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: "BREAKING: the supreme court just ruled 6-3 that cats can't have salami. Not even as a treat. #breakingnews #salami",
+    comments: "3",
+    reTweets: "2",
+    likes: "0",
+    uploads: "2",
+  },
+  {
+    name: "Lana",
+    username: "yousipher",
+    time: "5min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1619996107119-31de3403d467?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTN8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: `Did I "kill" a plant or did the plant not have what it takes to thrive in this fast-paced environment. #plantmom`,
+    comments: "12",
+    reTweets: "20",
+    likes: "0",
+    uploads: "0",
+  },
+  {
+    name: "Ingred",
+    username: "ingredisphere",
+    time: "6min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1584088743546-db0289ee9b07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: "girls trip!! Me and my cat were in the living room and now we're in the kitchen",
+    comments: "14",
+    reTweets: "5",
+    likes: "1",
+    uploads: "0",
+  },
+  {
+    name: "Lauren",
+    username: "Lore-lie",
+    time: "10min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1520295187453-cd239786490c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA1fHxwcm9maWxlJTIwcGhvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    text: `Happy "my clock is right again" for all those who celebrate #daylightsavings`,
+    comments: "0",
+    reTweets: "14",
+    likes: "18",
+    uploads: "0",
+  },
+  {
+    name: "Bart",
+    username: "baribones",
+    time: "10min",
+    photo:
+      "https://images.unsplash.com/photo-1521673461164-de300ebcfb17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    profile_photo:
+      "https://images.unsplash.com/photo-1618827840222-fcf8f42509c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwcm9maWxlJTIwcGhvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    text: "My dog sighs a lot for someone who doesn't contribute to the household or know what government is",
+    comments: "17",
+    reTweets: "10",
+    likes: "27",
+    uploads: "1",
+  },
+  {
+    name: "Rex",
+    username: "rex_johnson",
+    time: "10min",
+    photo:
+      "https://images.unsplash.com/photo-1541343672885-9be56236302a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHNjZW5lcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    profile_photo:
+      "https://images.unsplash.com/photo-1548509925-6a7f9e3e5dc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    text: `The anxious urge to say "No worries either way" when you're actually worrying both ways and a plus a secret third way`,
+    comments: "173",
+    reTweets: "50K",
+    likes: "30K",
+    uploads: "0",
+  },
+  {
+    name: "Bobby",
+    username: "inner_scircle",
+    time: "10min",
+    profile_photo:
+      "https://images.unsplash.com/photo-1616346322008-86d93f598cb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA3fHxwcm9maWxlJTIwcGhvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    text: "Garfield should be voiced by an actual cat and they can write subtitles #lasagna",
+    comments: "207",
+    reTweets: "57",
+    likes: "31",
+    uploads: "0",
+  },
 ];
-
-// https://randomwordgenerator.com/sentence.php
