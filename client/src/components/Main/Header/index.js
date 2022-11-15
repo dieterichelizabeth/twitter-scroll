@@ -12,7 +12,7 @@ import { profile } from "../../../data/profile";
 
 function Header() {
   return (
-    <Card as="header" className="border--bottom">
+    <Card as="header" className="border--bottom header--display">
       <Card.Body>
         <Card.Title className="row d-flex justify-content-between px-3 ">
           <b>Home</b>
