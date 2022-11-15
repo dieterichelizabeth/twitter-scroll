@@ -35,7 +35,7 @@ function Feed() {
       } finally {
         setshowLoader(false);
       }
-    }, 2000);
+    }, 1000);
   };
 
   // Update Selected Tweets
@@ -49,7 +49,7 @@ function Feed() {
   const revert_atBottom = () => {
     setTimeout(async () => {
       setAtBottom(false);
-    }, 3000);
+    }, 2000);
   };
 
   // ---------- Listen for bottom of feed ------------ //
