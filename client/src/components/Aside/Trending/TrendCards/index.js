@@ -40,7 +40,7 @@ function TrendCards() {
             )}
 
             <footer>
-              <Card.Text className="text-muted pt-1">
+              <Card.Text className="text-muted">
                 {trend.people} people are Tweeting about this
               </Card.Text>
             </footer>

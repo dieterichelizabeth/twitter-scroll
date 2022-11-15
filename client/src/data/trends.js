@@ -12,6 +12,15 @@ export const trends = [
     type: "WorldNews",
     hasWebsite: false,
     tweets: "125k",
-    people: "5,094",
+    people: "5,874",
+  },
+  {
+    type: "Breaking News",
+    hasWebsite: true,
+    siteTitle: "Animals",
+    siteDesc: "These cats are ready for #internaltionalCatDay",
+    photo:
+      "https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    people: "1,267",
   },
 ];

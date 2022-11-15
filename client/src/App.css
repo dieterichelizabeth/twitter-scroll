@@ -191,6 +191,14 @@ main {
 }
 
 /* Trending */
+.aside--display {
+  display: none;
+}
+
+.article__text {
+  font-size: 0.5rem;
+}
+
 .trending--card {
   background-color: var(--card-grey);
   border: none;
@@ -218,15 +226,6 @@ main {
   width: 25%;
 }
 
-/* Display Aside */
-.aside--display {
-  display: none;
-}
-
-.article__text {
-  font-size: 0.5rem;
-}
-
 @media screen and (min-width: 940px) {
   .aside--display {
     display: block;
@@ -236,5 +235,11 @@ main {
 @media screen and (min-width: 1028px) {
   .article__text {
     font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article__text {
+    font-size: 0.8rem;
   }
 }

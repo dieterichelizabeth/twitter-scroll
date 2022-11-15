@@ -16,7 +16,7 @@ function Trends() {
         {/* Trending Cards */}
         <TrendCards />
 
-        <a href="/" className="color--blue">
+        <a href="#" className="color--blue">
           Show More
         </a>
       </Card.Body>
