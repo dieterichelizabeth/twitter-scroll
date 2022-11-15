@@ -20,13 +20,13 @@ function Navbar() {
     <Nav as={"nav"} className="flex-column">
       {/* Nav Top */}
       <div className="nav__top">
-        <Nav.Link href="/">
+        <Nav.Link href="#">
           <span>{svg__menu}</span>
         </Nav.Link>
         <Nav.Link href="/" className="nav__logo">
           <span className="pt-1 pr-2">{svg__logo}</span>
         </Nav.Link>
-        <Nav.Link href="/">
+        <Nav.Link href="#">
           <span>{svg__stars}</span>
         </Nav.Link>
       </div>

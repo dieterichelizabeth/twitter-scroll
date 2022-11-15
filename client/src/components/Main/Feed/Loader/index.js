@@ -2,8 +2,9 @@
 function Loading() {
   return (
     <>
-      <div className="row justify-content-md-center pt-4">
-        <div className="spinner-border text-primary" role="status">
+      {/* row justify-content-md-center pt-4 */}
+      <div className="spinner">
+        <div className="spinner-border" role="status">
           <span className="sr-only">Loading...</span>
         </div>
       </div>
